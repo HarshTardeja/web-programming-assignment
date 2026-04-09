@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Web Programming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .nav-hub-card {
+            background-color: var(--card-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            text-decoration: none;
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+        }
+        .nav-hub-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-blue);
+            color: white;
+            text-decoration: none;
+            background-color: var(--card-hover);
+        }
+        .nav-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 43: Fixed Header/Nav -->
+    <header class="fixed-nav pt-1">
+        <div class="text-center" style="font-size: 0.7rem; color: var(--text-secondary);">Task [ 43 ]</div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" style="background: transparent; box-shadow: none; padding: 10px;">
+                <a class="navbar-brand text-white fw-bold" href="index.html">Web Programming</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="layouts.html">Layouts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assignments.html">Assignments</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                More Pages
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                <li><a class="dropdown-item" href="department.html">Department</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4 pt-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-white mb-3 mt-4">Web Programming Portfolio</h1>
+            <p class="text-secondary fs-5 pb-3">By: Harsh Tardeja</p>
+        </div>
+        
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-md-4">
+                <a href="layouts.html" class="nav-hub-card shadow-lg">
+                    <h3 class="mb-2">HTML Layouts</h3>
+                    <p class="text-secondary small mb-0">Divs, Flexbox, & Containers<br>(Tasks 1-6, 17, 18)</p>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="assignments.html" class="nav-hub-card shadow-lg">
+                    <h3 class="mb-2">Assignments & Logic</h3>
+                    <p class="text-secondary small mb-0">Tables, Lists, Forms & JS<br>(Tasks 10-16, 19, 26-42)</p>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="about.html" class="nav-hub-card shadow-lg">
+                    <h3 class="mb-2">About & Details</h3>
+                    <p class="text-secondary small mb-0">Student Info & Product Page<br>(Tasks 7, 8, 20, 21)</p>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="contact.html" class="nav-hub-card shadow-lg">
+                    <h3 class="mb-2">Contact & Login</h3>
+                    <p class="text-secondary small mb-0">Maps, Forms & Auth<br>(Tasks 9, 22-25)</p>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <a href="gallery.html" class="nav-hub-card shadow-lg">
+                    <h3 class="mb-2">Gallery</h3>
+                    <p class="text-secondary small mb-0">Z-Index Image Stack<br>(Task 44)</p>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
