@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments - Web Programming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Pills Dark Mode Overrides */
+        .nav-pills .nav-link { color: var(--text-secondary); border-radius: 8px; }
+        .nav-pills .nav-link:hover { background: var(--card-hover); color: var(--text-primary); }
+        .nav-pills .nav-link.active { background: var(--accent-glow); color: var(--bg-dark); font-weight: 600; }
+        .tab-content { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header class="fixed-nav">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" style="background: transparent; box-shadow: none; padding: 10px;">
+                <a class="navbar-brand" href="index.html">Web Programming</a>
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="layouts.html">Layouts</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="assignments.html">Assignments</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                More Pages
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                <li><a class="dropdown-item" href="department.html">Department</a></li>
+                                <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4 pt-4">
+        <h2 class="mb-2">Assignments & Logic</h2>
+        <p class="text-secondary pb-3 border-bottom">By: Harsh Tardeja</p>
+        
+        <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" id="pills-lists-tab" data-bs-toggle="pill" data-bs-target="#pills-lists" type="button">Tables & Lists</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="pills-forms-tab" data-bs-toggle="pill" data-bs-target="#pills-forms" type="button">Forms & Validation</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="pills-js-tab" data-bs-toggle="pill" data-bs-target="#pills-js" type="button">JS Interactivity</button></li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+            
+            <!-- LISTS & TABLES (Bento Grid) -->
+            <div class="tab-pane fade show active" id="pills-lists">
+                <div class="bento-grid">
+                    
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">10, 11</span><span class="task-category">LISTS</span>
+                        </div>
+                            </div>
+                        <h3 class="task-title">Mess Rating List</h3>
+                        <p class="task-desc">Simple unordered/ordered list for the mess menu.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">&lt;ul&gt; &lt;ol&gt;</span><span class="text-muted" style="font-size: 0.7rem;">Live</span></div>
+                            <div class="demo-content p-3 align-items-start">
+                                <ul>
+                                    <li>Starters</li>
+                                    <li>Main Course
+                                        <ol><li>Grilled Salmon</li><li>Steak Frites</li></ol>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">12, 13</span><span class="task-category">TABLES</span>
+                        </div>
+                            </div>
+                        <h3 class="task-title">Student Leaderboard</h3>
+                        <p class="task-desc">Ordered HTML table showing Rank and Name with styling.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">&lt;table&gt;</span><span class="text-muted" style="font-size: 0.7rem;">Live</span></div>
+                            <div class="demo-content p-3 w-100 overflow-auto">
+                                <table class="table table-dark table-hover text-center">
+                                    <thead><tr><th>Rank</th><th>Name</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>1st</td><td>Rahul M.</td></tr>
+                                        <tr><td>2nd</td><td>Priya K.</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">14</span><span class="task-category">IMAGES</span>
+                        </div>
+                            </div>
+                        <h3 class="task-title">Table with Images</h3>
+                        <p class="task-desc">Table cells containing embedded thumbnail images.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">&lt;table&gt;&lt;img&gt;</span><span class="text-muted" style="font-size: 0.7rem;">Live</span></div>
+                            <div class="demo-content p-3 w-100 overflow-auto">
+                                <table class="table table-dark table-hover align-middle text-center mb-0">
+                                    <thead><tr><th>Username</th><th>Avatar</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Rahul_M</td><td><img src="https://ui-avatars.com/api/?name=Rahul+M&background=random" class="rounded-circle" style="width: 40px; height: 40px;" alt="Avatar"></td></tr>
+                                        <tr><td>Priya_K</td><td><img src="https://ui-avatars.com/api/?name=Priya+K&background=random" class="rounded-circle" style="width: 40px; height: 40px;" alt="Avatar"></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">15, 16</span><span class="task-category">TABLES</span>
+                        </div>
+                            </div>
+                        <h3 class="task-title">Product Catalog HTML</h3>
+                        <p class="task-desc">Display products using HTML tables with styled borders, padding, and hover states.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">css hover</span><span class="text-muted" style="font-size: 0.7rem;">Live</span></div>
+                            <div class="demo-content p-3 w-100 overflow-auto">
+                                <table class="product-table font-monospace" style="font-size: 0.8rem;">
+                                    <thead><tr><th>Item</th><th>Price</th></tr></thead>
+                                    <tbody>
+                                        <tr><td>Logitech Mouse</td><td>$20</td></tr>
+                                        <tr><td>Campus Hoodie</td><td>$60</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- FORMS -->
+            <div class="tab-pane fade" id="pills-forms">
+                <div class="bento-grid">
+                    
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">19</span><span class="task-category">JS FORMS</span>
+                            </div>
+                        </div>
+                        <h3 class="task-title">Registration Validate</h3>
+                        <p class="task-desc">JS script to check if passwords match appropriately.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">validation()</span></div>
+                            <div class="demo-content p-3">
+                                <form id="reg-form-19" class="w-100 text-start">
+                                    <input type="password" id="r19-pass" class="form-control mb-2" placeholder="Password" required>
+                                    <input type="password" id="r19-conf" class="form-control mb-2" placeholder="Confirm Password" required>
+                                    <button type="button" class="btn btn-primary w-100 mt-2">Validate</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">31</span><span class="task-category">JS FORMS</span>
+                            </div>
+                        </div>
+                        <h3 class="task-title">Age Validation</h3>
+                        <p class="task-desc">JS script validating number/age fields.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">validation()</span></div>
+                            <div class="demo-content p-3">
+                                <form id="reg-form-31" class="w-100 text-start">
+                                    <input type="number" id="r31-age" class="form-control mb-2" placeholder="Age >= 18" required>
+                                    <button type="button" class="btn btn-primary w-100 mt-2">Submit Age</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">32</span><span class="task-category">JS FORMS</span>
+                            </div>
+                        </div>
+                        <h3 class="task-title">Radio Buttons Logic</h3>
+                        <p class="task-desc">Validation for radio buttons form elements.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">checked</span></div>
+                            <div class="demo-content p-3 w-100 text-start">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="options" id="radioBtn1">
+                                    <label class="form-check-label" for="radioBtn1">Option A</label>
+                                </div>
+                                <button type="button" class="btn btn-outline-light btn-sm mt-3 w-100">Check Radio</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">33</span><span class="task-category">JS FORMS</span>
+                            </div>
+                        </div>
+                        <h3 class="task-title">Checkbox Constraints</h3>
+                        <p class="task-desc">Validation for checkboxes and terms and conditions.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">checked</span></div>
+                            <div class="demo-content p-3 w-100 text-start">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Terms & Conditions</label>
+                                </div>
+                                <button type="button" class="btn btn-outline-light btn-sm mt-3 w-100">Agree</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">34</span><span class="task-category">JS FORMS</span>
+                            </div>
+                        </div>
+                        <h3 class="task-title">Dropdown Option</h3>
+                        <p class="task-desc">JS logic mapped to option/select constraints.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">selectedIndex</span></div>
+                            <div class="demo-content p-3 w-100 text-start">
+                                <select class="form-select form-select-sm mb-2">
+                                    <option selected disabled>Choose Country</option>
+                                    <option value="1">India</option>
+                                </select>
+                                <button type="button" class="btn btn-outline-light btn-sm w-100">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">35</span><span class="task-category">JS FORMS</span>
+                            </div>
+                        </div>
+                        <h3 class="task-title">Null Option Checking</h3>
+                        <p class="task-desc">Preventing null or empty options submitted by user.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">val != ""</span></div>
+                            <div class="demo-content p-3 w-100 text-start">
+                                <select class="form-select form-select-sm mb-2">
+                                    <option selected disabled>Select Course</option>
+                                    <option value="CS">Computer Science</option>
+                                </select>
+                                <button type="button" class="btn btn-outline-light btn-sm w-100">Check Input</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">36</span><span class="task-category">JS FORMS</span>
+                            </div>
+                        </div>
+                        <h3 class="task-title">Focus Listeners</h3>
+                        <p class="task-desc">Uses 'focus' event listeners on text fields for styling updates.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">onfocus()</span></div>
+                            <div class="demo-content p-3 w-100 text-start">
+                                <label class="text-muted" style="font-size: 0.8rem;">Focus Effect</label>
+                                <div class="d-flex gap-2 align-items-center mb-3">
+                                    <input type="text" class="form-control" placeholder="Click me...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">37</span><span class="task-category">JS FORMS</span>
+                            </div>
+                        </div>
+                        <h3 class="task-title">Blur Listeners</h3>
+                        <p class="task-desc">Uses 'blur' event listeners to validate text as user leaves input.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">onblur()</span></div>
+                            <div class="demo-content p-3 w-100 text-start">
+                                <label class="text-muted" style="font-size: 0.8rem;">Blur Validator</label>
+                                <div class="d-flex gap-2 align-items-center mb-3">
+                                    <input type="text" class="form-control" placeholder="Leave focus here...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">39</span><span class="task-category">JS FORMS</span>
+                        </div>
+                            </div>
+                        <h3 class="task-title">Live Password Strength</h3>
+                        <p class="task-desc">Active input check determining real-time password strength.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">input</span></div>
+                            <div class="demo-content p-3 w-100 text-start">
+                                <label class="text-muted" style="font-size: 0.8rem;">Live Strength Check</label>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <input type="password" id="live-pass" class="form-control" placeholder="Type password">
+                                    <span id="pass-feedback" class="ms-2 badge bg-secondary">Waiting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- JS INTERACTIVITY -->
+                        <div class="tab-pane fade" id="pills-js">
+                <div class="bento-grid">
+                    
+                    <div class="task-card">
+                        <div class="task-header-row"><div class="d-flex align-items-center gap-2"><span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">26</span><span class="task-category">DOM JS</span></div></div>
+                        <h3 class="task-title">Change HTML Text</h3>
+                        <p class="task-desc">Use javascript to target an ID and change its inner HTML text content.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">innerHTML</span></div>
+                            <div class="demo-content p-3 text-center">
+                                <p id="t26-para">Original Text</p>
+                                <button id="t26-btn" class="btn btn-sm btn-outline-light">Change Text (Task 26)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row"><div class="d-flex align-items-center gap-2"><span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">27</span><span class="task-category">DOM JS</span></div></div>
+                        <h3 class="task-title">Change Input Value</h3>
+                        <p class="task-desc">Target an input field and display its value when clicked.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">.value</span></div>
+                            <div class="demo-content p-3 text-center">
+                                <input type="text" id="t27-input" class="form-control mb-2 w-75 mx-auto bg-dark border-secondary text-white" placeholder="Enter Name">
+                                <button id="t27-btn" class="btn btn-sm btn-outline-light mb-2">Show Greeting</button>
+                                <div id="t27-div" class="text-success fw-bold"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row"><div class="d-flex align-items-center gap-2"><span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">28</span><span class="task-category">DOM JS</span></div></div>
+                        <h3 class="task-title">Hide HTML Element</h3>
+                        <p class="task-desc">Toggle the display style of an element to simulate hiding and showing.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">display: none</span></div>
+                            <div class="demo-content p-3 text-center">
+                                <div id="t28-box" style="width: 50px; height: 50px; background: #3b82f6; margin: 0 auto 10px; border-radius: 4px;"></div>
+                                <button id="t28-btn" class="btn btn-sm btn-outline-light">Toggle Box Hidden (Task 28)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row"><div class="d-flex align-items-center gap-2"><span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">29</span><span class="task-category">DOM JS</span></div></div>
+                        <h3 class="task-title">Change Image Attribute</h3>
+                        <p class="task-desc">Dynamically change the 'src' attribute of an img tag using JavaScript.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">.src</span></div>
+                            <div class="demo-content p-3 text-center">
+                                <img id="t29-img" src="https://ui-avatars.com/api/?name=Cat&background=random" class="rounded mb-2" style="width: 50px;" alt="cat">
+                                <br>
+                                <button id="t29-btn" class="btn btn-sm btn-outline-light">Change Avatar (Task 29)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row"><div class="d-flex align-items-center gap-2"><span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">30</span><span class="task-category">DOM JS</span></div></div>
+                        <h3 class="task-title">Change Inline CSS</h3>
+                        <p class="task-desc">JavaScript click listener modifying element text content and inline style color.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">.style.color</span></div>
+                            <div class="demo-content text-center py-3">
+                                <p id="t30-para" class="fs-4 font-monospace" style="color: #64748b; font-weight: bold;">Status: Offline</p>
+                                <button id="t30-btn" class="btn btn-sm btn-outline-light">Toggle Online (Task 30)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row"><div class="d-flex align-items-center gap-2"><span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">38, 40</span><span class="task-category">CSS JS</span></div></div>
+                        <h3 class="task-title">Event Position Tooltips</h3>
+                        <p class="task-desc">Listen to explicit user interaction positions and move elements around dynamically.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">elem.style.top</span></div>
+                            <div class="demo-content p-3 text-center position-relative" style="height: 150px; overflow: hidden;">
+                                <div id="t38-box" class="d-flex align-items-center justify-content-center fw-bold text-white rounded" style="width: 100%; height: 100%; background: #23232d; border: 2px dashed #9333ea; cursor: pointer; transition: opacity 0.2s;">Hover Me</div>
+                                <div id="t38-tooltip" style="display: none; position: absolute; background: #0f172a; color: #fff; padding: 6px 12px; border-radius: 6px; pointer-events: none; white-space: nowrap; box-shadow: 0 4px 6px rgba(0,0,0,0.3); z-index: 1010;">Mouse Coordinates Captured!</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row"><div class="d-flex align-items-center gap-2"><span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">41</span><span class="task-category">CSS JS</span></div></div>
+                        <h3 class="task-title">Z-Index Modals</h3>
+                        <p class="task-desc">Demonstration of setting CSS z-index from javascript.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">elem.style.zIndex</span></div>
+                            <div class="demo-content position-relative" style="height: 150px;">
+                                <div id="t41-box1" class="z-card bg-danger text-white shadow-lg d-flex align-items-center justify-content-center fw-bold rounded" style="position: absolute; top: 20px; left: 10px; z-index: 1000; cursor: pointer; width: 120px; height: 80px; transition: transform 0.2s;">Box 1</div>
+                                <div id="t41-box2" class="z-card bg-primary text-white shadow-lg d-flex align-items-center justify-content-center fw-bold rounded" style="position: absolute; top: 50px; left: 60px; z-index: 1001; cursor: pointer; width: 120px; height: 80px; transition: transform 0.2s;">Box 2</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="task-card">
+                        <div class="task-header-row"><div class="d-flex align-items-center gap-2"><span class="task-number px-2 w-auto" style="border-radius: 12px; font-size: 0.8rem;">42</span><span class="task-category">CSS JS</span></div></div>
+                        <h3 class="task-title">Dynamic Overlap</h3>
+                        <p class="task-desc">Programmatic control allowing elements to dynamically overlap.</p>
+                        <div class="live-demo-frame">
+                            <div class="demo-top-bar"><span class="demo-tag">elem.style.zIndex</span></div>
+                            <div class="demo-content text-center py-5 d-flex justify-content-center align-items-center" style="height: 150px;">
+                                <button id="t42-btn" class="btn btn-warning text-dark fw-bold px-4 py-2 rounded-pill shadow">Bring Box 1 Forward</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div> <!-- /container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Restored simple validation logic
+        document.getElementById('reg-form-31').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const p = document.getElementById('r31-pass').value;
+            const c = document.getElementById('r31-conf').value;
+            const a = document.getElementById('r31-age').value;
+            const err = document.getElementById('r31-error');
+            if(p.length < 8) { err.textContent = "Pass >= 8 chars needed."; err.className="text-danger mt-2 mb-0"; return; }
+            if(p !== c) { err.textContent = "Passwords do not match."; err.className="text-danger mt-2 mb-0"; return; }
+            if(parseInt(a) < 18) { err.textContent = "Age must be >= 18."; err.className="text-danger mt-2 mb-0"; return; }
+            err.className = "text-success mt-2 mb-0"; err.textContent = "Success!";
+        });
+
+        // Live validation Task 39
+        const le = document.getElementById('live-email');
+        const ef = document.getElementById('email-feedback');
+        le.addEventListener('input', function() {
+            if(this.value.includes('@')) { ef.textContent = 'Valid'; ef.className='badge bg-success'; } else { ef.textContent = 'Invalid'; ef.className='badge bg-danger';}
+        });
+        const lp = document.getElementById('live-pass');
+        const pf = document.getElementById('pass-feedback');
+        lp.addEventListener('input', function() {
+            if(this.value.length >= 8) { pf.textContent = 'Strong'; pf.className='ms-2 badge bg-success'; } 
+            else { pf.textContent = 'Weak'; pf.className='ms-2 badge bg-danger'; }
+        });
+
+        // Task 40: Z-index modals
+        document.querySelectorAll('.z-card').forEach(card => {
+            card.addEventListener('click', function() {
+                document.querySelectorAll('.z-card').forEach(c => c.style.zIndex = c.style.zIndex === '1001' ? '1000' : c.style.zIndex);
+                this.style.zIndex = '1001';
+            });
+        });
+    </script>
+</body>
+</html>
+
+
